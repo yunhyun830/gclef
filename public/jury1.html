@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://g-clef.kr/en/jury2022.php -->
+<html lang="ko" class=" js  no-overflowscrolling"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta name="HandheldFriendly" content="true">
+<meta name="format-detection" content="telephone=no">
+<title>g-clef</title>
+<link rel="stylesheet" href="./jury1_files/mobile.css">
+<link rel="stylesheet" href="./jury1_files/font-awesome.min.css">
+<link rel="stylesheet" href="./jury1_files/all.min.css">
+<link rel="stylesheet" href="./jury1_files/common.css">
+<link href="./jury1_files/css2" rel="stylesheet">
+<link href="./jury1_files/css2(1)" rel="stylesheet">
+
+
+
+<link rel="stylesheet" type="text/css" href="./jury1_files/nanumsquare.css">
+<!--[if lte IE 8]>
+<script src="http://g-clef.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://g-clef.kr";
+var g5_bbs_url   = "http://g-clef.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "1";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+
+// 언어 전환을 위한 전역변수 선언
+var tmms_current_lang = "en";
+function getParameter(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+
+</script>
+<script src="./jury1_files/en.js"></script>
+<script src="./jury1_files/jquery-1.12.4.min.js"></script>
+<script src="./jury1_files/jquery-migrate-1.4.1.min.js"></script>
+<script src="./jury1_files/jquery.menu.js"></script>
+<script src="./jury1_files/common.js"></script>
+<script src="./jury1_files/wrest.js"></script>
+<script src="./jury1_files/placeholders.min.js"></script>
+<script src="./jury1_files/basic.js"></script>
+<script src="./jury1_files/modernizr.custom.70111.js"></script>
+</head>
+<body>
+
+<script>
+    function jury(){
+        alert('페이지 준비중입니다. (The page is being prepared.)');
+    }
+    //테스트1
+</script>
+
+<style>
+#hd_wrapper { height: 35px; }
+.nav li { padding: 5px 30px !important}
+.dp02 li { padding: 0 10px !important}
+</style>
+
+<header id="hd">
+    <h1 id="hd_h1">g-clef</h1>
+
+    <div class="to_content"><a href="http://g-clef.kr/en/jury2022.php#container">본문 바로가기</a></div>
+
+    
+    <div id="hd_wrapper">
+        <div id="logo">
+            <a href="http://g-clef.kr/"><img src="./jury1_files/m_logo.png" alt="g-clef"></a>
+        </div>
+		<!-- pc -->
+        <ul class="nav">
+            <li><a class="gnbLi" pos="target01">MAIN</a></li>
+            <li><a class="gnbLi" pos="target02" href="http://g-clef.kr/?pos=target02">REGULATION</a></li>
+
+
+            <li class="nav_jur active">JURY              <div class="dp02">
+                  <ul>
+                      <li class="gnbLi"><a href="http://g-clef.kr/en/jury2020.php">Past Jury Members</a></li>
+                      <li class="gnbLi"><a href="http://g-clef.kr/en/jury2022.php">2022</a></li>
+                      <!-- <li><a href="http://g-clef.kr/bbs/board.php?bo_table=jury">2020</a></li>
+                      <li ><a href="http://g-clef.kr/bbs/board.php?bo_table=jury2">2021</a></li> -->
+                  </ul>
+              </div>
+            </li>
+            <!-- <li class="nav_jur"><a href="/bbs/board.php?bo_table=jury" class="gnbLi">JURY            </a></li> -->
+            <li><a class="gnbLi" pos="target03" href="http://g-clef.kr/?pos=target03">CONTACT</a></li>
+            <li><a class="gnbLi" pos="target04" href="http://g-clef.kr/?pos=target04">NOTICE</a></li>
+                <li><a class="gnbLi" href="http://g-clef.kr/en/winner.php">Past Winners</a></li>
+        </ul>
+
+        <button type="button" id="gnb_open" class="hd_opener"><i class="fa fa-bars" aria-hidden="true"></i><span class="sound_only">메뉴열기</span></button>
+		<!-- mobile -->
+        <div id="gnb" class="hd_div" style="display: none;">
+            <button type="button" id="gnb_close" class="hd_closer"><span class="sound_only">메뉴 닫기</span><i class="fa fa-times" aria-hidden="true"></i></button>
+            <ul>
+                <li><a class="gnbLi" pos="target01" href="http://g-clef.kr/">MAIN</a></li>
+                <li><a class="gnbLi" pos="target02" href="http://g-clef.kr/#target02">REGULATION</a></li>
+                <li class="active jury_hd">JURY                  <div class="m_dp02">
+                  <ul>
+                    <!-- <li><a href="http://g-clef.kr/bbs/board.php?bo_table=jury">2020</a></li>
+                      <li ><a href="http://g-clef.kr/bbs/board.php?bo_table=jury2">2021</a></li> -->
+                       <li class="gnbLi"><a href="http://g-clef.kr/en/jury2020.php">Past Jury Members</a></li>
+                      <li class="gnbLi"><a href="http://g-clef.kr/en/jury2022.php">2022</a></li>
+                  </ul>
+                  </div>
+                </li>
+                <!-- <li><a href="/bbs/board.php?bo_table=jury" class="gnbLi">JURY</a></li> -->
+                <li><a class="gnbLi" pos="target03" href="http://g-clef.kr/#target04">CONTACT</a></li>
+                <li><a class="gnbLi" pos="target04" href="http://g-clef.kr/#target05">NOTICE</a></li>
+                    <li><a class="gnbLi" href="http://g-clef.kr/en/winner.php">Past Winners</a></li>
+            </ul>
+            <div class="m_langBt">
+                <a class="navBt leng_kr_btn" onclick="len_change(&#39;kr&#39;);">KR</a>
+                <a class="navBt leng_en_btn" onclick="len_change(&#39;en&#39;);">EN</a>
+            </div>
+			    <!-- <select class="m_langBt" name="lang">
+	            <option value="kr">KR</option>
+	            <option value="en" selected>EN</option>
+	        </select> -->
+        </div>
+
+        <div class="language">
+            <a class="navBt leng_kr_btn" onclick="len_change(&#39;kr&#39;);">KR</a>
+            <a class="navBt leng_en_btn" onclick="len_change(&#39;en&#39;);">EN</a>
+        </div>
+
+        <!-- <select class="language" name="lang">
+            <option value="kr">KR</option>
+            <option value="en" selected>EN</option>
+        </select> -->
+
+
+        <script>
+        $(function () {
+            //폰트 크기 조정 위치 지정
+            var font_resize_class = get_cookie("ck_font_resize_add_class");
+            if( font_resize_class == 'ts_up' ){
+                $("#text_size button").removeClass("select");
+                $("#size_def").addClass("select");
+            } else if (font_resize_class == 'ts_up2') {
+                $("#text_size button").removeClass("select");
+                $("#size_up").addClass("select");
+            }
+
+            $(".hd_opener").on("click", function() {
+                var $this = $(this);
+                var $hd_layer = $this.next(".hd_div");
+
+                if($hd_layer.is(":visible")) {
+                    $hd_layer.hide();
+                    $this.find("span").text("열기");
+                } else {
+                    var $hd_layer2 = $(".hd_div:visible");
+                    $hd_layer2.prev(".hd_opener").find("span").text("열기");
+                    $hd_layer2.hide();
+
+                    $hd_layer.show();
+                    $this.find("span").text("닫기");
+                }
+            });
+
+            $("#container").on("click", function() {
+                $(".hd_div").hide();
+
+            });
+
+            $(".btn_gnb_op").click(function(){
+                $(this).toggleClass("btn_gnb_cl").next(".gnb_2dul").slideToggle(300);
+
+            });
+
+            $(".hd_closer").on("click", function() {
+                var idx = $(".hd_closer").index($(this));
+                $(".hd_div:visible").hide();
+                $(".hd_opener:eq("+idx+")").find("span").text("열기");
+            });
+
+			// 언어 선택 셀렉트 박스
+			$("#hd_wrapper select[name='lang']").change(function(){
+				let lang = this.options[this.selectedIndex].value;
+				set_cookie("lang", lang, 24, '/');
+				location.reload(true);
+			});
+
+        });
+        function len_change(data){
+          let lang = data;
+          set_cookie("lang", lang, 24, '/');
+          location.reload(true);
+        }
+
+
+        </script>
+
+        <script>
+            $(function () {
+                $('.jury_hd').click (function(){
+                    $('.m_dp02').slideToggle();
+                });
+
+                if(document.getElementById("leng_chk").value == 'en'){
+                    $(".leng_en_btn")[0].onclick();
+                }else if(document.getElementById("leng_chk").value == 'kr'){
+                    $(".leng_kr_btn")[0].onclick();
+                }
+            });
+        </script>
+
+    </div>
+</header>
+
+
+
+<div id="wrapper">
+
+    <div id="container">
+    <!--     	<h2 id="container_title" class="top" title="g-clef">
+    		<a href="javascript:history.back();"><i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sound_only">뒤로가기</span></a> g-clef    	</h2>
+     -->
+<script src="./jury1_files/jquery-ui.js"></script>
+<script src="./jury1_files/jquery-1.12.4.js"></script>
+<script src="./jury1_files/basic(1).js"></script>
+<link rel="stylesheet" href="./jury1_files/en.css">
+<link rel="stylesheet" href="./jury1_files/jury2021.css">
+
+<style media="screen">
+    .contWrap {padding: 100px 0;}
+    h1.titNm {width: 100%; font-size: 2em; margin: 20px 0;}
+    .photo {float: left; width: 500px; height: 500px; background-repeat: no-repeat; background-position: center center; background-size: cover; box-shadow: 1px 1px 8px #26486e;}
+    .photo.one {background-image: url('/img/jury1.jpg');}
+    .photo.two {background-image: url('/img/jury12.png');}
+    .photo.three {background-image: url('/img/jury18.png');}
+    .photo.four {background-image: url('/img/jury14.jpg');}
+    .photo.five {background-image: url('/img/jury16.jpg');}
+    .photo.six {background-image: url('/img/jury17.jpg');}
+    .photo.seven {background-image: url('/img/jury15.jpg');}
+
+
+
+
+
+
+    .text {float: left; width: calc(100% - 500px); padding: 0 30px; font-size: 1.5em; word-break: keep-all; text-align: justify;}
+    .titNm span {margin-left: 55px;}
+
+    .top_c { display: flex; font-size: 1rem; text-align: center; justify-content: center;}
+    .top_c li {   border: 1px solid #26486e; transition: all 0.4s; cursor: pointer;}
+    .top_c li  { display: inline-block; padding: 8px 60px;}
+    .top_c li:hover { background: #26486e;}
+    .top_c li:hover a { color: #fff}
+    .select { background: #26486e; margin-left: 20px;}
+    .select a { color: #fff; }
+
+    .peopleL { display: flex;  margin: 40px 0; flex-wrap: wrap; justify-content: center;  padding-bottom: 40px; }
+    .peopleL li { margin-right: 20px; font-size: 14px; padding: 8px 20px; transition: all 0.3s;  border: 1px solid #26486e; background: #26486e; border-radius: 10px; margin-bottom: 20px;}
+    .peopleL li a { display: inline-block; transition: all 0.3s;  }
+    .peopleL li:last-child { margin-right: 0;}
+    .peopleL li:nth-child(4) { margin-right: 0;}
+    .peopleL li  a {  color: #fff; }
+
+    .juryMenu { display: flex; justify-content: center; margin-top: 40px; }
+    .juryMenu li { color: #555; font-size: 1.25rem; padding: 10px 15px 5px;  cursor: pointer; }
+    /*.juryMenu li:first-child {margin-right: 20px;}*/
+    .active_menu { border-bottom: 2px solid #000; color: #000 !important; font-weight: bold; font-size: 1.25rem; }
+
+    @media (max-width: 1024px) {
+        .contWrap {padding: 150px 0 100px;}
+        h1.titNm {text-align: center; font-size: 3em; margin-top: 100px;}
+        .photo, .text {float: none; display: block;}
+        .photo {margin: auto;}
+        .text {width: 100%; font-size: 2em; margin-top: 30px;}
+        .titNm span {margin-left: 0;}
+        .text { word-break: break-all !important;}
+    }
+
+    @media (max-width: 768px){
+        .contWrap {padding: 100px 0 20px;}
+        .peopleL  { display: block; text-align: left; border:0; padding-bottom: 0}
+        .peopleL li { border: 1px solid #26486e; margin: 0 auto 20px !important; width: 70%; border-radius: 5px; }
+        /* .peopleL li:hover  a { border-bottom: 1px solid rgba(178,205,228,1); } */
+        .text { word-break: break-all !important;}
+        .juryMenu  { margin-top: 10px; }
+    }
+
+    @media (max-width: 520px) {
+        .contWrap {padding: 100px 0 20px;}
+        .photo {width: 300px; height: 300px;}
+        h1.titNm {font-size: 2em;}
+        .juryMenu  { margin-top: 0; }
+    }
+</style>
+
+<script type="text/javascript">
+    $(function(){
+
+        // 메뉴를 클릭시 해당 section으로 스크롤
+        $('.ppList').click(function(){
+            var pos = $(this).attr('pos');
+            var offset = $("#"+pos).stop().offset(); //선택한 태그의 위치를 반환
+            $('html').stop().animate({scrollTop: (offset.top - $('header').height())},800)
+        });
+
+
+
+    });
+</script>
+
+<div id="container">
+    <div class="contWrap">
+
+        <!-- <ul class="top_c">
+            <li><a href="http://www.g-clef.kr/bbs/board.php?bo_table=jury">2020</a></li>
+            <li class="select"><a href="http://www.g-clef.kr/bbs/board.php?bo_table=jury2">2021</a></li>
+        </ul> -->
+
+<!--        <ul class="juryMenu">-->
+<!--            <li class="active_menu"><a href="http://www.g-clef.kr/en/jury2022.php">2022</a></li>-->
+<!--        </ul>-->
+
+        <ul class="peopleL">
+            <li><a id="pp01" class="ppList" pos="tgp01">Sunghoon Simon Hwang (South Korea) </a></li>
+            <li><a id="pp02" class="ppList" pos="tgp02">Pietro Borgonovo (Italy)</a></li>
+            <li><a id="pp03" class="ppList" pos="tgp03">Onpavee Nitisingkarin (Thailand)</a></li>
+            <li><a id="pp04" class="ppList" pos="tgp04">Jeong Yoo-jeong (South Korea)</a></li>
+            <li><a id="pp05" class="ppList" pos="tgp05">Jeongmin Wee (South Korea)</a></li>
+            <li><a id="pp06" class="ppList" pos="tgp06">Hye Woon Cho (South Korea)</a></li>
+            <li><a id="pp07" class="ppList" pos="tgp07">Ham Jae-ryeong (South Korea)</a></li>
+        </ul>
+
+        <section id="tgp01" class="peopleCont">
+            <h1 class="titNm">Sunghoon Simon Hwang (South Korea)<br>Artistic Director&nbsp;&amp; President of Jury (Piano)</h1>
+            <div class="cf">
+                <div class="photo one"></div>
+                <p class="text">
+                    The concert pianist Sunghoon Simon Hwang is one of the most prominent pianists of his generation. He has appeared internationally with major orchestras such as the Prague Radio Symphony Orchestra, the Orchestre de Montbeliard, the Janáček Philharmonic, the San Remo Symphony Orchestra, the Duisburg Symphony, the Orquestra Granada, the Orquestra Nacional do Porto, the Filarmonica Marchigiana, the Filarmonica Banatul, the Orchestra Sinfonica Sicilliana, the Vina del Mar Orchestra, the Bacau Symphony, the Taiwan National Symphony Orchestra, the Orquestra Sinfonica Perfecto Garcia Chornet, the Seoul Academy Symphony Orchestra and the Busan Metropolitan Orchestra.<br><br>
+
+                    His performances as soloist with orchestra, as a chamber musician and piano recitals received worldwide recognition from the audience and the music press, specially after his Debut at the Carnegie Hall in New York (USA) Mr. Hwang received a great critic at the New York Concert Review Inc.<br><br>
+
+                    Sunghoon Simon won more than 40 international awards and 9 special interpretation prizes at prestigious piano competitions like Epinal, Jaen, Porto, Senigallia, Maria Canals, Luis Sigall, Glenn Gould, Serge Prokofiev, Sergei Rachmaninoff, Anton Rubinstein, Johannes Brahms and Bellini. He got numerous  concert invitations from European and Asian music festivals like the Ferrucio Busoni festival, the Alfredo Speranza Festival, the Grosseto international piano festival, the “Klassik in der Altstadt” festival, the Chateau de Lourmarin festival, Niestetal international piano festival, Busan Maru International Music Festival(BMIMF), the Wennigsen music festival and many others.<br><br>
+
+                    Sunghoon Simon Hwang studied at the Korean National University of Arts in Seoul with Prof. J.P. Lim, at the Santa Cecilia Academia in Roma with Prof. Sergio Perticaroli, at the École Normal de Musique in Paris with Prof. Youngshin An, at the Hannover Musikhoschule in the classes of Prof. Einar Steen-Nökleberg and Prof. Mi-Kyung Kim.<br><br>
+
+                    Sunghoon Simon Hwang has taught worldwide master classes for piano and got many invitations from universities, conservatories and music summer schools, as for example at the Otto-von-Guericke University in Magdeburg, at the Kloster Michaelstein in Blankenburg with an invitation of the “Landes musik akademie Sachsen-Anhalt” in Germany. In 2010, he was invited as a Professor by the "Tenerife international concert academy festival"in Spain. From 2009 to 2013 he taught piano at the Hildesheim University in Germany.<br><br>
+
+                    Mr. Hwang is currently the Artistic Director of the Sviatoslav Richter international piano online competition, the Classic On international piano competition and the Glenn Gould in Memoriam piano competition in South Korea. Furthermore, he was invited as a member of Jury by numerous piano competitions such as the Maria Canals in Barcelona, the Claude Bonneton in Sete, the Rina Sala Gallo in Monza, the Tokyo international music competition, the Roma international music competition, the G.Raciti international music competition, the Terra degli Imperiali international music competition, the Euterpe international music competition.
+                </p>
+            </div>
+        </section>
+        <section id="tgp02" class="peopleCont">
+            <h1 class="titNm">Pietro Borgonovo (Italy)<br><span>Jury (Piano)</span></h1>
+            <div class="cf">
+                <div class="photo two"></div>
+                <p class="text">
+
+                    Born in Milan, Pietro Borgonovo distinguishes himself in conducting symphonic and operatic productions for prestigious festivals and theatres. Noteworthy is his presence at Salzburger Festpiele in the Progetto Pollini as the conductor of Klangforum Wien and the Arnold Schoenberg Chor as well as his work in the conducting the Orchestra del Maggio Musicale Fiorentinoat Maggio Musicale Fiorentino, at Ravenna Festival with the Teatro dell’Opera di Roma, at Venice Biennale. Moreover he has conducted the Orchestra del Teatro San Carlo di Napoli, the Orchestra dell’Arena di Verona, the Orchestra del Teatro La Fenice in Venice, the Orchestra del Teatro Lirico in Cagliari,the Orchestra del Teatro Verdi in Trieste, the Orchestra del Teatro Carlo Felice in Genova, the Semperoper in Dresden, theOrchestra della Toscana, the Haydn Orchestra in Bolzano, the Orchestra Sinfonica Siciliana in Palermo, the OrchestraCherubini, the Orchestra Verdi in Milano, the Nordwestdeutsche Philharmonie. and more importants Orchestras of Italy, Europe and USA. <br><br>
+                    &nbsp;
+                    In October 2003 he conducted the world première of “Medea” by Adriano Guarnieri at Teatro La Fenice in Venice. The opera was very successful with both audience and critics, some newspapers saying it was a “triumph”. The Italian Critics Association awarded the “Abbiati 2003” prize for the &nbsp;“refined music and stage performance which rendered the original preciosity of the composing and multimedia concept.”<br><br>
+                    &nbsp;
+                    A versatile musician, he is the Musical and Artistic Director of one of the oldest and most prestigious Italian concert societies, GOG (Giovine Orchestra Genovese) and the Artistic Director of the International Competition G.B. Viotti in Vercelli.<br><br>
+                    &nbsp;
+                    From a very early age he has excelled in the international scene as one of the best known oboe soloists. A pupil of Heinz Holliger, he plays at the major festivals and for international institutions: Salzburger Festpiele, Maggio Musicale Fiorentino, Venice Biennale, Musica Bayreuth, Festival d’Automne in Paris, Montreux Festival, Donaueschinger Musiktage, New York, Berlin, London, Vienna, Amsterdam, Monte Carlo, Prague, Bonn, Luxembourg, Moscow, Saint Peterbourg, Madrid, Lisbone.<br><br>
+                    &nbsp;
+                    Profoundly interested in contemporary music he also cooperates with many contemporary composers such as George Benjamin, Luciano Berio, Bruno Maderna, Azio Corghi, Franco Donatoni, Ivan Fedele, Adriano Guarnieri, Salvatore Sciarrino, Fabio Vacchi, Carlo Galante, Iannis Xenakis … He has played and conducted their works, also premières, which have often been dedicated to him. <br><br>
+                    &nbsp;
+                    &nbsp;
+                    Both as an oboe soloist and as a conductor he has many recordings produced by important international labels such as Denon, Erato, Ricordi, RCA, Col legno, BMG to his credit. He received the Grand Prix du Disque and a classification among the five most appreciated records of symphonic music from Italian critics.
+
+                </p>
+            </div>
+        </section>
+        <section id="tgp03" class="peopleCont">
+            <h1 class="titNm">Onpavee Nitisingkarin (Thailand)<br><span>Jury (Piano)</span></h1>
+            <div class="cf">
+                <div class="photo three"></div>
+                <p class="text">
+                    Onpavee Nitisingkarin, is a native of Thailand, where she received her undergraduate degree in piano performance at College of Music, Mahidol University.<br>
+                    After completed her Bachelor Degree, she attended WVU for her Master’s and Doctorate in piano performance under Prof.<br>
+                    Dr.Peter Amstutz. Her dissertation focuses on the topic of “Composers as Parents: Selected Twentieth-century Piano Works Written by Fathers for Their Children.<br>
+                    &nbsp;Dr.Nitisingkarin is a certified Orff Schulwerk teacher from Goerge Mason University and also in the DalcrozeEurhythmics Certification program at Carnegie Mellon University, Pittsburgh.<br>
+                    She w as awarded scholarships from the Valerie Canady Charitable Trust Foundation in 2011.<br>
+                    &nbsp;Onpavee&nbsp;also appears in numerous concerts as well as several piano competition venue.<br>
+                    She was WVU Young Artist concerto winner in 2012 and was selected to perform with WVU Symphony Orchestra.<br>
+                    Moreover, she was also semi- finalist in the 3rd Intersection of Classical and Jazz Piano Festival at WVU.<br>
+                    In February 2017,&nbsp;Onpavee&nbsp;was invited to perform the King Composition in "Concert in Remembrance of H.M.the late King Bhumibol Adulyadej" at Mater Dei School, Bangkok.<br>
+                    Besides being an active learner and performer, Dr.Onpavee&nbsp;also an experienced piano teacher.<br>
+                    She starts teaching piano since 2000 in Bangkok, Thailand.<br>
+                    Before relocated back in Bangkok,&nbsp;Onpavee&nbsp;was a senior piano instructor in WVU CMP program teaching piano, Eurhythmics (music and movement 1 and 2), Explore and Enjoy classes for toddlers.<br>
+                    She was also a piano faculty at Washington and Jefferson College as well as at Lincoln Park Performing Arts Center in Pennsylvania.<br>
+                    &nbsp;Onpavee&nbsp;also conducted Eurhythmics workshop in the 3rd Intersection of Classical and Jazz Piano Festival at WVU as well as Toddlers class to the WV Early Head Start program in 2014.<br>
+                    Additionally, she also served as a Vice President of West Virginia Collegiate Chapter of Music Teacher National Association in 2014 and also held the Trophy Chair position of West Virginia Music Teacher Association from 2014-2016.<br>
+                    In November 2017,&nbsp;Onpavee&nbsp;was invited to lead a workshop presentation on the topic of “Nurturing Musical Abilities: A Creative Movement in Piano Lessons” at the 2017 Piano Pedagogy Conference, UCSI University, Kuala Lumpur, Malaysia as well as at the SWU Piano Festival II.<br>
+                    &nbsp;Onpavee&nbsp;has also served as a jury member in several piano competitions and festivals.<br>
+                    Recently, she was a jury member for SET Youth Music Competition, Osaka International Music Competition (Bangkok regional round), the 3rd and 4th (2019) Singapore International Youth Piano Competition, and the 2nd Hong Kong International Music Competition for Young Pianists held July 2019.<br>
+                    Additionally, she also joined as an artist faculty at MusicFest Perugia 2018 in Italy.<br>
+                    Currently, she serves as an Asst.<br>
+                    Dean for Educational Services, Chair of Piano Department, Director of the Thailand International Piano Competition (TIPC), and a piano instructor at College of Music, Mahidol University in Bangok, Thailand.<br>
+                </p>
+            </div>
+        </section>
+        <section id="tgp04" class="peopleCont">
+            <h1 class="titNm">Jeong Yoo-jeong (South Korea)<br><span>Jury (Soprano)</span></h1>
+            <div class="cf">
+                <div class="photo four"></div>
+                <p class="text">
+                    (currently an Adjunct Professor at the Department of Vocal Music of Suwon University and served as an Adjunct Professor at Seoul National University)<br>
+                    - Graduated from Seoul National University and successfully completed the Master of Music program at Manhattan School of Music<br>
+                    - Currently completed the Ph.D. program in Art Management at Suwon University<br>
+                    - Made a debut in New York while performing for Orfeo ed Euridice, invited to the Aspen Music Festival and School, and stared at Lucia di Lammermoor, Carmen<br>
+                    - Starred for Uijeongbu Opera, Seoul Opera, Siheung Opera, La Pace Opera, etc.<br>
+                    - Performed with Seoul Philharmonic Orchestra, Seoul Philharmonic, Prime Philharmonic, Gyeonggi Provincial Orchestra, Mostly Philharmonic Orchestra, New York Christian Orchestra, and MCM Orchestra<br>
+                    - Won the Grand Prize in the International Music Competition and many other awards from Monthly Music, Music Journal and Baejae University Music Competition, etc.<br>
+                </p>
+            </div>
+        </section>
+        <section id="tgp05" class="peopleCont">
+            <h1 class="titNm">Jeongmin Wee (South Korea)<br><span>Jury (Tenor)</span></h1>
+            <div class="cf">
+                <div class="photo five"></div>
+                <p class="text">
+                    * received his bachelor of Music in Vocal Arts from Seoul National University, Master of Music in Vocal Arts at University of Southern California and Doctorate of Musical Arts in Opera Performance from University of Texas at Austin<br>
+                    * made Disney Hall debut as a tenor soloist for Beethoven’s Choral Fantasy and performed various roles in opera including Rodolfo in opera &lt;La bohéme&gt;, Tanzmeister in &lt;Ariadne auf Naxos&gt; with the Butler Opera Center and worked with Austin Lyric opera for Pagliacci Project as Beppe<br>
+                    * recent performances include Frantz in opera &lt;Les contes d'Hoffmann&gt; with Korea National Opera, Vogelsang in &lt;Der Schauspieldirektor&gt; with Seoul Metropolitan Opera, Baron, Inquisitor, Don Issachar, Cacambo, and Ragotski in &lt;Candide&gt; with Seoul Philharmonic Orchestra, Tybalt in &lt;Roméo et Juliette&gt;, Basilio in &lt;Le nozze di Figaro&gt;.<br>
+                    * Currently teaching at Sejong University as a Assistant Professor of Voice Department<br>
+            </p>
+            </div>
+
+        </section>
+        <section id="tgp06" class="peopleCont">
+            <h1 class="titNm">Hye Woon Cho (South Korea)<br><span>Jury (Violin)</span></h1>
+                <!-- <br> <span>Jury</span> -->
+            
+            <div class="cf">
+                <div class="photo six"></div>
+                <p class="text">
+                    Hye Woon Cho, a violinist known for her expressive emotional depth and technique, graduated from Busan Arts High and completed Pre-School of the Korea National University of Arts, and graduated with distinction from the Korean National University of Arts. She then went to the United States and completed her master's degree at Mannes College, and received her D.M.A degree from Boston University.<br><br>
+
+                    Having been recognized for her excellent musicianship and musical interpretation through her performances with the Busan National Symphony Orchestra and the Alioshio Orchestra in Korea, she has appeared on Italian radio with Italian Radio Sinfonia and made her New York debut at Carnegie Hall by winning the Special Presentation Winner audition. The Clara Piano Quartet, of whom she is the leader, won the first prize at the Boston International Chamber Music Competition (ICMEC) and made their chamber music debut at Carnegie Hall. She performed at the 20th Century Chamber Music Festival (New School Univ.), Brahms Festival chamber music (Boston Univ.), served as guest principal of the New Jersey Philharmonic, and actively performed in New York and Boston in the U.S.A.<br><br>
+
+                    She has also been invited to numerous international music programs and festivals as professor including Fall Foliage Chamber Music Program (2008, U.S.), International Children's Arts and Culture Festival hosted by the Malaysian government (2011, Malaysia), International Academy of Arts, Cremona (2012 &amp; 2014, Italy), Pyeongchang Special Music Festival (2013, Pyeongchang), Master Class, Malaga (2016, Spain), Jirisan International Music Festival (2017), International Academy of Arts Summer Festival in Saas-Fee (2017, Switzerland), Alps Music Festival (2017~2018, France),International Academy of Arts Summer Festival in Antwerp(2018, Belgium), where she has been further widening her musical spectrum through performances and masterclasses.<br><br>
+
+                    Violinist Hye Woon Cho continues to pursue her musical passion as current principal of Busan Chamber Music Society, and is nurturing future musicians in Busan National University, KyungSung University,  Korean National Institute for the Gifted in Arts, and Art Education in Busan National University.<br><br>
+
+                </p>
+            </div>
+        </section>
+        <section id="tgp07" class="peopleCont">
+            <h1 class="titNm">Ham Jae-ryeong (South Korea)<br><span>Jury (Clarinet)</span></h1>
+            <div class="cf">
+                <div class="photo seven"></div>
+                <p class="text">
+                    Graduated from Sunhwa Arts School<br>
+                    Successfully completed the Gifted Artist Program affiliated with the St. Petersburg National Conservatory of Music, Russia<br>
+                    Graduated summa cum laude from Bachelor of Arts, Master of Arts and Artist Diploma Program at Mozarteum University Salzburg, Austria<br>
+                    Performed with Central Symphony Orchestra for ‘Young Artist Concert’ and Seoul Philharmonic Orchestra for ‘Youth Concert’<br>
+                    Performed solo at Seoul Arts Center Recital Hall in 2011 and 2013<br><br>
+
+                    Invited to many musical performances, including Ensemble Tonkün at Sejong Art Center and Kumho Art Hall<br><br>
+
+                    Invited to perform for Saturday Concert at Baum Art Center,<br>
+                    Performed at various concerts at home and abroad, including Korea International Wind Band Festival, Peace Concert at Seoul Arts Center Concert Hall, Charity Concert for East Japan Great Earthquake in Tokyo, and the Invitation Concert at Seocho Cultural Center<br><br>
+
+                    Current) serving as an Associate Professor of the Department of Music and Arts at Seoul Arts College and lecturer at Seoul National University of Education and Seonhwa Arts Middle/High School, and a director of the Korean Society for Early Childhood and Elementary Music Education<br>
+
+                    Clarinettiste for Ensemble Luminasia and Ensemble MOZ<br>
+                </p>
+            </div>
+        </section>
+
+
+
+    </div>
+
+
+        </div>
+</div>
+
+
+
+<div id="ft">
+    <img src="./jury1_files/m_logo.png" alt="logo"><br>
+            <a href="http://g-clef.kr/bbs/login.php?url=%2Fen%2Fjury2022.php" class="adminBt">ADMIN</a>
+        <!-- <div id="ft_copy">
+        <div id="ft_company">
+            <a href="http://g-clef.kr/bbs/content.php?co_id=company">회사소개</a>
+            <a href="http://g-clef.kr/bbs/content.php?co_id=privacy">개인정보처리방침</a>
+            <a href="http://g-clef.kr/bbs/content.php?co_id=provision">서비스이용약관</a>
+        </div>
+        Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.<br>
+    </div>
+    <div class="ft_cnt">
+    	<h2>사이트 정보</h2>
+        <p class="ft_info">
+        	회사명 : 회사명 / 대표 : 대표자명<br>
+			주소  : OO도 OO시 OO구 OO동 123-45<br>
+			사업자 등록번호  : 123-45-67890<br>
+			전화 :  02-123-4567  팩스  : 02-123-4568<br>
+			통신판매업신고번호 :  제 OO구 - 123호<br>
+			개인정보관리책임자 :  정보책임자명<br>
+		</p>
+    </div> -->
+    <button type="button" id="top_btn"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></button>
+</div>
+<script>
+jQuery(function($) {
+
+    $( document ).ready( function() {
+
+        // 폰트 리사이즈 쿠키있으면 실행
+        font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+
+        //상단고정
+        if( $(".top").length ){
+            var jbOffset = $(".top").offset();
+            $( window ).scroll( function() {
+                if ( $( document ).scrollTop() > jbOffset.top ) {
+                    $( '.top' ).addClass( 'fixed' );
+                }
+                else {
+                    $( '.top' ).removeClass( 'fixed' );
+                }
+            });
+        }
+
+        //상단으로
+        $("#top_btn").on("click", function() {
+            $("html, body").animate({scrollTop:0}, '500');
+            return false;
+        });
+
+    });
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정12344 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+
+
+</div></body></html>
