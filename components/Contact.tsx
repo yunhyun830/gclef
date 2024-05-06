@@ -129,7 +129,7 @@ export default function Contact() {
                 />
               </svg>
 
-              <p>kmat0@nationalux.org</p>
+              <p>kmat@nationalux.cafe24.com</p>
             </span>
           </div>
         </div>
