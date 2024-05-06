@@ -11,7 +11,7 @@ export default function Contact() {
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('/bgindex.jpg')",
         }}
-      >
+      >s
         <h1 className="lg:text-6xl text-4xl lg:text-left text-center text-[#fea116] tracking-wider font-thin">
         {locale === "en" ? "Contact" : "오시는 길"}
         </h1>
